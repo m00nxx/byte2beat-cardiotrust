@@ -61,7 +61,7 @@ organizer acceptance or a final submission.
 - [x] Verify the private model, 13 tests, and Streamlit health inside Coder
 - [x] Keep the Coder application port owner-only
 - [x] Coder integration visibly demonstrated and documented
-- [ ] Record the final Coder demo video
+- [x] Record the authenticated local Coder demo video
 - [ ] Confirm organizer acceptance of a self-hosted, locally reachable deployment
 - [x] Written technical report
 - [x] Local Kaggle Writeup draft

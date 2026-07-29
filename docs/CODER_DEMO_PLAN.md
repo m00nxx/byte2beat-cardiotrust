@@ -1,8 +1,8 @@
 # Coder Demo Evidence Plan
 
 Status date: 2026-07-29  
-Status: organizer requirement confirmed; private local Coder execution
-demonstrated; final recording and organizer acceptance still pending
+Status: organizer requirement confirmed; private local Coder execution and
+authenticated demo recording complete; organizer acceptance still pending
 
 ## Confirmed organizer requirement
 
@@ -53,17 +53,22 @@ than the repository's Dev Container integration. Coder still provisioned and
 managed the workspace and its application port. See
 `docs/coder_local_deployment_2026-07-29.md`.
 
-## Required recording
+## Completed recording
 
-1. Record the running `cardiotrust-demo` Coder workspace.
-2. Capture the private model hash and `preflight: PASS`.
-3. Capture the 13 passing unit tests.
-4. Show Coder detecting port 8501 and the app reaching healthy status.
-5. Open the app from the Coder dashboard, not from an unrelated local server.
-6. Demonstrate a confident label, an uncertainty abstention, and an invalid
-   input stop.
-7. Show the locked holdout evidence and age-60-plus limitation.
-8. Record the workspace/template version and the repository revision.
+`artifacts/recordings/coder_demo_final.mp4` is a 100-second authenticated
+recording that shows:
+
+1. the running `cardiotrust-demo` Coder workspace and ready agent
+2. Coder detecting port 8501 as owner-only
+3. the app opened through the Coder port proxy
+4. an uncertainty abstention
+5. an invalid-input stop
+6. a high-confidence model signal
+7. the locked holdout evidence and age-60-plus limitation
+
+The private model hash, preflight PASS, 13 tests, health result, Coder version,
+template, workspace, and repository revision remain recorded in the deployment
+evidence note.
 
 ## Private model transfer
 
@@ -86,5 +91,5 @@ when the Coder app has been changed from owner-only access.
 The official Discord was joined read-only and no organizer was contacted. The
 organizer requirement is clear, but the promised challenge-specific guide was
 not found. A real local Coder execution is now documented. Cash-prize
-compliance remains unproven until the final demo is recorded and the
-organizers' acceptance of a self-hosted, locally reachable deployment is known.
+compliance remains unproven until the organizers' acceptance of a self-hosted,
+locally reachable deployment is known.

@@ -3,4 +3,5 @@ __pycache__/
 *.py[cod]
 artifacts/model.joblib
 artifacts/runtime/
+artifacts/recordings/*.webm
 data/raw/

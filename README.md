@@ -5,8 +5,9 @@ Local project for the [Byte2Beat Kaggle Community Hackathon](https://www.kaggle.
 Status on 2026-07-29: **CONDITIONAL GO**. A validation-locked prototype exists,
 replays deterministically, and now runs in a real private Coder workspace.
 Publication remains blocked by unresolved dataset licensing and prize
-administration. Cash eligibility remains unproven until the final Coder demo is
-recorded and organizer acceptance of the local deployment form is known.
+administration. An authenticated 100-second Coder demo is recorded. Cash
+eligibility remains unproven until organizer acceptance of the local deployment
+form is known.
 
 ## Live competition status
 
@@ -31,6 +32,8 @@ recorded and organizer acceptance of the local deployment form is known.
   Preflight passed, all 13 tests passed, and Streamlit reported healthy.
 - Coder detected port 8501 and kept it authenticated and owner-only. No trial,
   public endpoint, or shared port was created.
+- A 100-second authenticated recording demonstrates the Coder workspace,
+  owner-only port proxy, three decision outcomes, and model limitations.
 
 The judged entry must include a submitted Kaggle Writeup, selected track,
 public notebook, public project or demo, and written report. A draft writeup is
@@ -123,6 +126,9 @@ the required evidence files, and owner-only app access.
 - `docs/MODEL_CARD.md`: intended use, metrics, and limitations
 - `docs/CODER_DEMO_PLAN.md`: required Coder recording evidence
 - `docs/coder_local_deployment_2026-07-29.md`: actual Coder workspace evidence
+- `artifacts/recordings/coder_demo_final.mp4`: authenticated Coder demo
+- `artifacts/figures/coder_app_model_signal.png`: proxied app evidence
+- `artifacts/figures/coder_app_limitations.png`: subgroup-limit evidence
 - `artifacts/model_manifest.json`: private model size and locked SHA-256
 - `scripts/coder_preflight.py`: fail-closed Coder deployment validation
 - `scripts/start_local_coder_server.sh`: foreground local Coder control plane

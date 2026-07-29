@@ -66,6 +66,40 @@ The dashboard evidence is:
 The image shows the running workspace, ready agent, and detected port 8501. No
 port was shared with the organization or public.
 
+## Authenticated demo recording
+
+An authenticated browser recording was made through Coder's workspace
+dashboard and port proxy. Login screens and idle operational gaps were removed
+from the final cut. The recording contains no password or session token.
+
+- file: `artifacts/recordings/coder_demo_final.mp4`
+- duration: 100 seconds
+- video: H.264, 1440x900, 25 fps, no audio
+- bytes: `3899740`
+- SHA-256:
+  `D37DA02907F8930C3EB823FF8158FB9F5E248C68DD9D4D2171ABA1CD09DA4469`
+
+The sequence shows:
+
+1. the `cardiotrust-demo` workspace Running
+2. the `main` agent Ready
+3. port 8501 detected and owner-only
+4. the locked holdout metrics in the app
+5. abstention on an uncertain profile
+6. refusal to label an invalid blood-pressure profile
+7. a high-confidence model signal
+8. global evidence and the age-60-plus limitation
+
+Still images from the authenticated app session are:
+
+- `artifacts/figures/coder_app_model_signal.png`, SHA-256
+  `E8FBD21EAF73426EF75F083981551F8A418DA02746A21270D3C90E6E812582CA`
+- `artifacts/figures/coder_app_limitations.png`, SHA-256
+  `15BAB758B7B40B31E8139C2D32EABEC305C4F638EF13930FA32FFB28833AAF39`
+
+The unedited browser captures are retained locally as ignored WebM files. They
+are not part of the repository evidence package.
+
 The local control plane and Git source can be restarted in separate WSL
 terminals with `scripts/start_local_coder_server.sh` and
 `scripts/serve_local_repo.sh`. Both remain foreground processes deliberately;
@@ -80,7 +114,6 @@ yet establish organizer acceptance for the cash prize because:
 
 - no challenge-specific Coder deployment guide was found
 - the deployment is self-hosted and locally reachable
-- no final demo video has been recorded
 - no public endpoint has been created
 - no organizer has reviewed or accepted this evidence
 
