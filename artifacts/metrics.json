@@ -1,0 +1,106 @@
+{
+  "selected_model": "calibrated_hist_gradient_boosting",
+  "development": {
+    "calibrated_logistic": {
+      "roc_auc": 0.791949584882246,
+      "average_precision": 0.772469325913112,
+      "balanced_accuracy": 0.727358574577009,
+      "sensitivity": 0.6759424851563058,
+      "specificity": 0.7787746639977123,
+      "brier": 0.18677027259683196,
+      "log_loss": 0.5601552019241794,
+      "ece_10": 0.03393243143111159,
+      "threshold": 0.5
+    },
+    "calibrated_hist_gradient_boosting": {
+      "roc_auc": 0.8027624557828205,
+      "average_precision": 0.7860660287672012,
+      "balanced_accuracy": 0.7361955104825219,
+      "sensitivity": 0.7006223621146005,
+      "specificity": 0.7717686588504432,
+      "brier": 0.1798052280570299,
+      "log_loss": 0.5394151119823928,
+      "ece_10": 0.0052397508664744725,
+      "threshold": 0.5
+    }
+  },
+  "holdout_at_0_5": {
+    "roc_auc": 0.8014019578604674,
+    "average_precision": 0.7865159310600599,
+    "balanced_accuracy": 0.7349021622048411,
+    "sensitivity": 0.7028612303290415,
+    "specificity": 0.7669430940806405,
+    "brier": 0.1805791453497668,
+    "log_loss": 0.5411899077910536,
+    "ece_10": 0.002561999440421435,
+    "threshold": 0.5
+  },
+  "holdout_intervals_95": {
+    "roc_auc": {
+      "estimate": 0.8014019578604674,
+      "ci_low": 0.7941659704332715,
+      "ci_high": 0.8086760583770352
+    },
+    "average_precision": {
+      "estimate": 0.7865159310600599,
+      "ci_low": 0.7765396673734063,
+      "ci_high": 0.795976812891409
+    },
+    "balanced_accuracy": {
+      "estimate": 0.7349021622048411,
+      "ci_low": 0.7278572871371864,
+      "ci_high": 0.7428770424721293
+    },
+    "sensitivity": {
+      "estimate": 0.7028612303290415,
+      "ci_low": 0.6921995708154506,
+      "ci_high": 0.712950643776824
+    },
+    "specificity": {
+      "estimate": 0.7669430940806405,
+      "ci_low": 0.7572883900486131,
+      "ci_high": 0.7773126965970832
+    },
+    "brier": {
+      "estimate": 0.1805791453497668,
+      "ci_low": 0.17712384262783326,
+      "ci_high": 0.18406669293833627
+    },
+    "log_loss": {
+      "estimate": 0.5411899077910536,
+      "ci_low": 0.5329784247742574,
+      "ci_high": 0.5495658605222548
+    },
+    "ece_10": {
+      "estimate": 0.002561999440421435,
+      "ci_low": 0.004545689318813121,
+      "ci_high": 0.013169505309272772
+    }
+  },
+  "split": {
+    "source_rows": 70000,
+    "excluded_duplicate_profile_rows": 82,
+    "modeling_rows": 69918,
+    "development_rows": 55934,
+    "holdout_rows": 13984,
+    "holdout_seed": 20260801,
+    "development_seed": 42
+  },
+  "validation": {
+    "outer_folds": 5,
+    "outer_repeats": 3,
+    "inner_calibration_folds": 3,
+    "bootstrap_iterations": 500,
+    "outer_jobs": 4,
+    "classification_threshold": 0.5,
+    "selective_target_coverage": 0.8,
+    "selective_confidence_threshold": 0.605890544810509
+  },
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scikit_learn": "1.9.0"
+  }
+}

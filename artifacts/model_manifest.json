@@ -1,0 +1,7 @@
+{
+  "file": "artifacts/model.joblib",
+  "bytes": 642767,
+  "sha256": "E2F42C05FDB8A48E088421A0C5D8FC60ED56C1DF9CF6C32FDE8277F1E09BF5CB",
+  "validation_lock": "docs/VALIDATION_LOCK.md",
+  "publication": "private-transfer-only"
+}

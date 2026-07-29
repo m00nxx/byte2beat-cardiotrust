@@ -1,0 +1,47 @@
+{
+  "name": "CardioTrust Byte2Beat",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bookworm",
+  "postCreateCommand": "python -m pip install --upgrade pip && pip install -r requirements.txt",
+  "postStartCommand": "bash scripts/start_demo.sh",
+  "forwardPorts": [8501],
+  "portsAttributes": {
+    "8501": {
+      "label": "CardioTrust Streamlit",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "customizations": {
+    "coder": {
+      "autoStart": true,
+      "name": "cardiotrust",
+      "displayApps": {
+        "web_terminal": true,
+        "ssh_helper": true,
+        "port_forwarding_helper": true,
+        "vscode": true,
+        "vscode_insiders": false
+      },
+      "apps": [
+        {
+          "slug": "cardiotrust-demo",
+          "displayName": "CardioTrust Demo",
+          "url": "http://localhost:8501",
+          "openIn": "tab",
+          "share": "owner",
+          "order": 1,
+          "healthCheck": {
+            "url": "http://localhost:8501/_stcore/health",
+            "interval": 5,
+            "threshold": 6
+          }
+        }
+      ]
+    },
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}

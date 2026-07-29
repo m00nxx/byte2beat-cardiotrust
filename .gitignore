@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.py[cod]
+artifacts/model.joblib
+artifacts/runtime/
+data/raw/

@@ -1,0 +1,74 @@
+{
+  "files": {
+    "cardio_base.csv": {
+      "bytes": 2941524,
+      "sha256": "21A705D23381B0DFD6A6416DA701B490744F1FC3B47E9FF3DB3968C420FFA10C"
+    },
+    "cardiac_failure_processed.csv": {
+      "bytes": 4258225,
+      "sha256": "75A4992191C8B8E59D62526501A30355FE0172B430E75939266F1A2967C9B6EB"
+    },
+    "heart_processed.csv": {
+      "bytes": 67363,
+      "sha256": "9C33F2F81E1DE3087F13B6757AC7834B53C709238948C089FC433C0DFABE116E"
+    }
+  },
+  "primary_shape": [
+    70000,
+    13
+  ],
+  "modeling_shape": [
+    69918,
+    13
+  ],
+  "processed_shape": [
+    70000,
+    13
+  ],
+  "heart_shape": [
+    918,
+    16
+  ],
+  "primary_columns": [
+    "id",
+    "age",
+    "gender",
+    "height",
+    "weight",
+    "ap_hi",
+    "ap_lo",
+    "cholesterol",
+    "gluc",
+    "smoke",
+    "alco",
+    "active",
+    "cardio"
+  ],
+  "source_invalid_counts": {
+    "age": 0,
+    "height": 53,
+    "weight": 7,
+    "systolic": 229,
+    "diastolic": 1034,
+    "bp_order": 1236,
+    "blood_pressure": 1334
+  },
+  "modeling_invalid_counts": {
+    "age": 0,
+    "height": 53,
+    "weight": 7,
+    "systolic": 229,
+    "diastolic": 1034,
+    "bp_order": 1236,
+    "blood_pressure": 1334
+  },
+  "duplicate_profile_rows_excluded": 82,
+  "duplicate_profile_groups": 41,
+  "conflicting_label_groups": 17,
+  "processed_non_age_columns_match": true,
+  "processed_age_range": [
+    0.0,
+    1.0
+  ],
+  "processed_file_used_for_modeling": false
+}
