@@ -57,7 +57,12 @@ organizer acceptance or a final submission.
 - [x] Join the official Discord and review Coder guidance read-only
 - [x] Record organizer evidence that cash requires deployment through Coder
 - [x] Record that no challenge-specific Coder deployment guide was found
-- [ ] Coder integration visibly demonstrated and documented
+- [x] Run the project in a real self-hosted Coder workspace
+- [x] Verify the private model, 13 tests, and Streamlit health inside Coder
+- [x] Keep the Coder application port owner-only
+- [x] Coder integration visibly demonstrated and documented
+- [ ] Record the final Coder demo video
+- [ ] Confirm organizer acceptance of a self-hosted, locally reachable deployment
 - [x] Written technical report
 - [x] Local Kaggle Writeup draft
 - [ ] Kaggle Writeup created with track selected

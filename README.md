@@ -2,10 +2,11 @@
 
 Local project for the [Byte2Beat Kaggle Community Hackathon](https://www.kaggle.com/competitions/byte-2-beat).
 
-Status on 2026-07-29: **CONDITIONAL GO**. A validation-locked local prototype
-exists and replays deterministically. Publication remains blocked by unresolved
-dataset licensing, unresolved prize administration, and the lack of a recorded
-Coder run.
+Status on 2026-07-29: **CONDITIONAL GO**. A validation-locked prototype exists,
+replays deterministically, and now runs in a real private Coder workspace.
+Publication remains blocked by unresolved dataset licensing and prize
+administration. Cash eligibility remains unproven until the final Coder demo is
+recorded and organizer acceptance of the local deployment form is known.
 
 ## Live competition status
 
@@ -23,9 +24,13 @@ Coder run.
 - No writeup, notebook, public demo, or final submission has been created.
 - The published rules still contain unfilled `[INSERT]` placeholders.
 - Organizers stated that all USD 1,500 of cash prizes require deployment
-  through Coder. A repository scaffold alone is not sufficient evidence.
+  through Coder.
 - The official Discord was joined read-only. No challenge-specific Coder guide
   or public deployment template was found, and no organizer was contacted.
+- A self-hosted Coder v2.35.3 workspace now runs the private model and app.
+  Preflight passed, all 13 tests passed, and Streamlit reported healthy.
+- Coder detected port 8501 and kept it authenticated and owner-only. No trial,
+  public endpoint, or shared port was created.
 
 The judged entry must include a submitted Kaggle Writeup, selected track,
 public notebook, public project or demo, and written report. A draft writeup is
@@ -89,13 +94,16 @@ The final protocol and code hashes were frozen before observing the holdout.
 A second full run from the pinned environment produced byte-identical
 `metrics.json`, selective-policy, subgroup, fold, and interval artifacts.
 
-The Dev Container now includes Coder autostart metadata, a private demo app, an
-idempotent Streamlit launcher, and a health check. It is a Coder-native
-configuration, but it does **not** prove challenge compliance until it is run
-and recorded inside an eligible Coder workspace.
+The Dev Container includes Coder autostart metadata, a private demo app, an
+idempotent Streamlit launcher, and a health check. Separately, the project has
+been demonstrated in a real self-hosted Coder workspace using the Docker
+Containers template and Git Clone module. This proves actual local Coder
+execution, but not organizer acceptance or cash-prize eligibility.
 
 The Discord evidence and exact operational interpretation are recorded in
 `docs/discord_coder_evidence_2026-07-29.md`.
+The live local deployment evidence is recorded in
+`docs/coder_local_deployment_2026-07-29.md`.
 
 `artifacts/model.joblib` remains private and excluded from version control. A
 clean Coder clone requires that exact file to be transferred into the workspace
@@ -114,8 +122,11 @@ the required evidence files, and owner-only app access.
 - `docs/VALIDATION_LOCK.md`: protocol freeze and locked code hashes
 - `docs/MODEL_CARD.md`: intended use, metrics, and limitations
 - `docs/CODER_DEMO_PLAN.md`: required Coder recording evidence
+- `docs/coder_local_deployment_2026-07-29.md`: actual Coder workspace evidence
 - `artifacts/model_manifest.json`: private model size and locked SHA-256
 - `scripts/coder_preflight.py`: fail-closed Coder deployment validation
+- `scripts/start_local_coder_server.sh`: foreground local Coder control plane
+- `scripts/serve_local_repo.sh`: foreground private Git source for the template
 - `artifacts/metrics.json`: exact model metrics and environment
 - `artifacts/data_manifest.json`: file hashes, shapes, and anomaly counts
 - `artifacts/figures/demo_desktop.png`: visually inspected demo render
@@ -143,7 +154,7 @@ See `PROVENANCE.md` for exact source IDs, sizes, hashes, and the evidence limit.
 Separate user approval is required before:
 
 - contacting the organizer or sending any Discord message
-- creating a Coder account, starting a trial, or provisioning paid resources
+- starting a Coder trial or provisioning paid resources
 - publishing a repository, Kaggle notebook, demo, or writeup
 - exposing a trained model or any dataset-derived artifact publicly
 - making the one final hackathon submission
