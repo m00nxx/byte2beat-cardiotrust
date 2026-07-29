@@ -294,6 +294,20 @@ def format_metric(value: float | None) -> str:
     return "n/a" if value is None else f"{value:.4f}"
 
 
+def format_metric_interval_row(
+    metric: str,
+    estimate: float,
+    ci_low: float,
+    ci_high: float,
+) -> str:
+    if metric == "ece_10":
+        return f"| {metric} | {estimate:.4f} | not reported |"
+    return (
+        f"| {metric} | {estimate:.4f} | "
+        f"[{ci_low:.4f}, {ci_high:.4f}] |"
+    )
+
+
 def write_report(
     *,
     source_raw: pd.DataFrame,
@@ -334,8 +348,12 @@ def write_report(
         for row in fold_stability.itertuples(index=False)
     ]
     interval_rows = [
-        f"| {row.metric} | {row.estimate:.4f} | "
-        f"[{row.ci_low:.4f}, {row.ci_high:.4f}] |"
+        format_metric_interval_row(
+            row.metric,
+            row.estimate,
+            row.ci_low,
+            row.ci_high,
+        )
         for row in metric_intervals.itertuples(index=False)
     ]
     selective_rows = [
@@ -426,6 +444,11 @@ Selected model: **{chosen_name}**
 
 Log loss: {holdout_metrics['log_loss']:.4f}; ECE (10 equal-width bins):
 {holdout_metrics['ece_10']:.4f}.
+
+The naive percentile-bootstrap ECE interval is omitted because resampled ECE
+is upward-biased here: the generated percentile bounds do not contain the
+point estimate. ECE is therefore treated as an exploratory calibration
+summary, not a primary uncertainty claim.
 
 ## Selective prediction
 

@@ -31,5 +31,18 @@ Status: frozen before observing the `20260801` holdout
 | `requirements.txt` | `34574F4274FF48F96649FA9554A55FAD510A87E4C638737199ED4E44D5AF659E` |
 
 Documentation, demo presentation, and tests may be improved after this lock.
-Any modification to the locked training or evaluation files invalidates the
-claim that the final holdout was observed only after protocol freeze.
+Post-lock changes to modeling, selection, preprocessing, thresholds, or metric
+computation invalidate the claim that the final holdout was observed only
+after protocol freeze.
+
+## Post-lock reporting amendment
+
+On 2026-07-29, `src/run_experiment.py` was changed only in the Markdown report
+formatter so the naive percentile-bootstrap ECE interval is displayed as
+`not reported`. The generated percentile bounds do not contain the point
+estimate and are not presented as a valid uncertainty interval. This amendment
+does not change data processing, model fitting, predictions, selection,
+thresholds, metrics, CSV/JSON artifacts, or figures. The original locked hash
+above is retained as evidence of the code evaluated before the holdout. The
+reporting-amended file has SHA-256
+`BAD7FA0F26CEFF2F7FF296DBCD6713AC7F3208D6DC3D02011B095FCFB8D91C1D`.
