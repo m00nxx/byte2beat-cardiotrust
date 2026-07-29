@@ -10,6 +10,7 @@ Publication date: 2026-07-29
 - aggregate metrics, subgroup tables, validation folds, and figures
 - validation lock, model card, provenance note, and technical report
 - authenticated Coder demo recording and deployment evidence
+- final Kaggle URLs and submission-status evidence
 
 ## Excluded
 

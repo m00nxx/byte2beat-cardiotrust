@@ -2,7 +2,7 @@
 
 Local project for the [Byte2Beat Kaggle Community Hackathon](https://www.kaggle.com/competitions/byte-2-beat).
 
-Status on 2026-07-29: **submission package ready**. A validation-locked
+Status on 2026-07-29: **submitted to Byte2Beat**. A validation-locked
 prototype replays deterministically and runs in a real self-hosted Coder
 workspace. This public package contains source code, aggregate evaluation
 evidence, a public notebook, and an authenticated 100-second Coder demo. It
@@ -30,15 +30,28 @@ deliberately excludes raw row-level data and the trained model.
   sufficient was sent in `#hackathon-discussion` on 2026-07-29 at 12:34 CEST;
   the organizer response is pending.
 - A self-hosted Coder v2.35.3 workspace now runs the private model and app.
-  Preflight passed, all 13 tests passed, and Streamlit reported healthy.
+  Preflight passed, all 15 tests passed, and Streamlit reported healthy.
 - Coder detected port 8501 and kept it authenticated and owner-only. No trial,
   public endpoint, or shared port was created.
 - A 100-second authenticated recording demonstrates the Coder workspace,
   owner-only port proxy, three decision outcomes, and model limitations.
+- The General-track Writeup was submitted on 2026-07-29 and Kaggle displayed
+  the authoritative status `Submitted!`.
 
 The judged entry includes a Kaggle Writeup in the General track, this public
 repository, the public notebook, the Coder demo recording, and the written
 report.
+
+## Submission links
+
+- [Submitted Kaggle Writeup](https://www.kaggle.com/competitions/byte-2-beat/writeups/cardiotrust-a-cardiovascular-model-that-knows-whe)
+- [Public Kaggle notebook](https://www.kaggle.com/code/m00nxx/cardiotrust-selective-cardiovascular-prediction)
+- [Public GitHub repository](https://github.com/m00nxx/byte2beat-cardiotrust)
+- [Public Coder demo recording](https://github.com/m00nxx/byte2beat-cardiotrust/blob/main/artifacts/recordings/coder_demo_final.mp4)
+
+Kaggle keeps submitted hackathon Writeups hidden from unauthenticated viewers
+until the hackathon closes. The other three links returned HTTP 200 without an
+authenticated session on 2026-07-29.
 
 ## Project
 
@@ -128,8 +141,9 @@ host-provided CSV at `data/raw/cardio_base.csv`.
 - `src/features.py`: shared plausibility and feature engineering
 - `src/inference.py`: demo decision policy and profile sensitivity
 - `reports/baseline_report.md`: generated technical result
-- `reports/writeup_draft.md`: local, non-submitted narrative
-- `notebooks/cardio_trust.ipynb`: clean local notebook draft
+- `reports/writeup_draft.md`: source for the submitted Kaggle Writeup
+- `notebooks/cardio_trust.ipynb`: source for the public Kaggle notebook
+- `docs/submission_evidence_2026-07-29.md`: final URLs and submission evidence
 - `docs/VALIDATION_LOCK.md`: protocol freeze and locked code hashes
 - `docs/MODEL_CARD.md`: intended use, metrics, and limitations
 - `docs/CODER_DEMO_PLAN.md`: required Coder recording evidence
