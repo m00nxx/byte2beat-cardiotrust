@@ -1,7 +1,9 @@
 # CardioTrust: a cardiovascular model that knows when not to answer
 
-**Status:** local draft, not submitted  
-**Track:** select in Kaggle before submission  
+**Status:** final submission copy
+
+**Track:** General
+
 **Competition:** Byte2Beat
 
 ## Executive summary
@@ -113,8 +115,9 @@ The project pins Python packages, records data SHA-256 hashes and environment
 versions, uses fixed seeds, and emits machine-readable metrics. A second full
 run produced byte-identical metric, selective-prediction, subgroup, fold, and
 interval files. The Dev Container defines a Coder app, autostart command, and
-health check for the Streamlit service on port 8501; a live Coder recording is
-still required.
+health check for the Streamlit service on port 8501. The public demo recording
+shows the real Coder workspace, ready agent, owner-only port proxy, application
+behavior, and limitations.
 
 ## Limitations and responsible use
 
@@ -129,9 +132,11 @@ still required.
 - CardioTrust must not be used for diagnosis, treatment, triage, or emergency
   decisions.
 
-## Submission blockers
+## Public submission package
 
-Before publication, the team must resolve dataset/model licensing, obtain the
-organizer's Coder integration instructions, demonstrate that integration in
-the demo, create a public Kaggle notebook and public demo, select a track, and
-receive explicit approval for the one final submission.
+The public repository contains the complete source, pinned environment,
+aggregate evidence, notebook, model card, technical report, Coder configuration,
+and Coder demo recording. It excludes row-level data and the trained model
+because the upstream dataset license is displayed as `Unknown`. Reviewers can
+obtain the host-provided CSV from the official Byte2Beat resource folder and
+recreate the model with the documented command.
