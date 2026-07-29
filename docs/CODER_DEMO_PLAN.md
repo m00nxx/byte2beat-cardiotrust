@@ -88,8 +88,9 @@ when the Coder app has been changed from owner-only access.
 
 ## Evidence gap
 
-The official Discord was joined read-only and no organizer was contacted. The
-organizer requirement is clear, but the promised challenge-specific guide was
-not found. A real local Coder execution is now documented. Cash-prize
-compliance remains unproven until the organizers' acceptance of a self-hosted,
-locally reachable deployment is known.
+The initial official Discord review was read-only. On 2026-07-29 at 12:34 CEST,
+a single clarification was sent in `#hackathon-discussion` asking whether the
+authenticated local Coder recording is sufficient or a continuously online
+public Coder URL is required. No attachment or local URL was sent. The response
+is pending. Cash-prize compliance remains unproven until the organizers'
+acceptance of a self-hosted, locally reachable deployment is known.

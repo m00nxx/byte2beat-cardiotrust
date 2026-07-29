@@ -26,8 +26,11 @@ form is known.
 - The published rules still contain unfilled `[INSERT]` placeholders.
 - Organizers stated that all USD 1,500 of cash prizes require deployment
   through Coder.
-- The official Discord was joined read-only. No challenge-specific Coder guide
-  or public deployment template was found, and no organizer was contacted.
+- The official Discord was reviewed. No challenge-specific Coder guide or
+  public deployment template was found.
+- A clarification asking whether the authenticated local Coder recording is
+  sufficient was sent in `#hackathon-discussion` on 2026-07-29 at 12:34 CEST;
+  the organizer response is pending.
 - A self-hosted Coder v2.35.3 workspace now runs the private model and app.
   Preflight passed, all 13 tests passed, and Streamlit reported healthy.
 - Coder detected port 8501 and kept it authenticated and owner-only. No trial,
@@ -159,7 +162,7 @@ See `PROVENANCE.md` for exact source IDs, sizes, hashes, and the evidence limit.
 
 Separate user approval is required before:
 
-- contacting the organizer or sending any Discord message
+- sending any further organizer or Discord message
 - starting a Coder trial or provisioning paid resources
 - publishing a repository, Kaggle notebook, demo, or writeup
 - exposing a trained model or any dataset-derived artifact publicly

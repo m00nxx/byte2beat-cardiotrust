@@ -5,8 +5,9 @@ Checked: 2026-07-29
 ## Scope
 
 The official Hack4Health Discord invite linked by Kaggle was joined with
-explicit user approval. The review was read-only: no message, reaction,
-organizer contact, or prize claim was made.
+explicit user approval. The initial review was read-only. A single organizer
+clarification was later sent with explicit user approval, as recorded below.
+No reaction or prize claim was made.
 
 Server: `Hack4Health` (`1411753545660629165`)
 
@@ -47,13 +48,27 @@ This is evidence of a missing public instruction artifact, not proof that none
 exists in an unindexed message, deleted post, private channel, or external
 document.
 
+## Organizer clarification requested
+
+At 2026-07-29 12:34 CEST, account `m00n` sent the following message in
+`#hackathon-discussion`:
+
+> Hi! Quick Byte2Beat/Coder cash-prize clarification: We have a real
+> self-hosted Coder workspace running our app, with an authenticated video
+> showing the Coder dashboard, workspace/agent, owner-only port proxy, and the
+> app. Does this satisfy the "deploy through Coder" cash-prize requirement, or
+> must judges receive a continuously online/public Coder deployment URL? We
+> would prefer not to create a cloud account requiring payment-card
+> verification. The Kaggle submission deadline is August 1. Thanks!
+
+Status: sent successfully; organizer response pending. No file, local URL,
+credential, model artifact, or dataset information was attached.
+
 ## Operational conclusion
 
 Cash track status: **CONDITIONAL GO**.
 
-The local Dev Container, Coder app metadata, autostart launcher, and health
-check are useful implementation evidence, but they do not satisfy the observed
-requirement by themselves. A real eligible Coder workspace must launch the
-project, expose the app, and be captured in the submission demo. Until that
-run is completed and recorded, cash-prize eligibility is unproven.
-
+The real local Coder workspace, authenticated port proxy, application run, and
+demo recording are complete. Cash-prize eligibility remains unproven only
+because it is not yet known whether the organizers accept a self-hosted,
+locally reachable deployment or require a continuously online public URL.

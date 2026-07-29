@@ -62,6 +62,8 @@ organizer acceptance or a final submission.
 - [x] Keep the Coder application port owner-only
 - [x] Coder integration visibly demonstrated and documented
 - [x] Record the authenticated local Coder demo video
+- [x] Ask the organizer whether the local Coder recording satisfies cash eligibility
+- [ ] Receive and record the organizer response
 - [ ] Confirm organizer acceptance of a self-hosted, locally reachable deployment
 - [x] Written technical report
 - [x] Local Kaggle Writeup draft

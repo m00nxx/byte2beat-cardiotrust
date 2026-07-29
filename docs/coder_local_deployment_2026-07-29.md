@@ -117,5 +117,6 @@ yet establish organizer acceptance for the cash prize because:
 - no public endpoint has been created
 - no organizer has reviewed or accepted this evidence
 
-No publication, public sharing, organizer contact, or final Kaggle submission
-was performed.
+One organizer clarification was sent in `#hackathon-discussion` on 2026-07-29
+at 12:34 CEST; the response is pending. No publication, public sharing, or final
+Kaggle submission was performed.
